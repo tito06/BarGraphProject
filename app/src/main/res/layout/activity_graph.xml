@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GraphActivity">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/barChart">
+
+    </com.github.mikephil.charting.charts.BarChart>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter 5 numbers from 5 to 20:"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="30dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="num"
+            android:id="@+id/ed1"/>
+        <EditText
+            android:layout_toRightOf="@id/ed1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="num"
+            android:id="@+id/ed2"/>
+        <EditText
+            android:layout_toRightOf="@id/ed2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="num"
+            android:id="@+id/ed3"/>
+
+        <EditText
+            android:layout_toRightOf="@id/ed3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="num"
+            android:id="@+id/ed4"/>
+        <EditText
+            android:layout_toRightOf="@id/ed4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="num"
+            android:id="@+id/ed5"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/sub"/>
+
+</LinearLayout>
